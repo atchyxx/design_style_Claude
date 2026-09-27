@@ -94,7 +94,7 @@ import { Button } from './components/dads/Button';
 <Button variant='solid-fill' size='lg' type='submit'>提出する</Button>
 ```
 
-propsの正確な名前と値は、コピーした `.tsx` の型定義で確認する。使い方の例は `assets/components/<Name>/<Name>.stories.tsx` にある。
+propsの正確な名前と値は、コピーした `.tsx` の型定義で確認する。ソースは `assets/components/<Name>.md`、使い方の例は Storybook（https://design.digital.go.jp/dads/react/）にある。
 
 ## キーカラーを変える
 

@@ -1,12 +1,12 @@
 ---
 name: dads-react-components
-description: デジタル庁デザインシステム（DADS）の公式コードスニペット（React版 / design-system-example-components-react、React + Tailwind CSS + TypeScript）を同梱し、それを使ってReactの画面・フォーム・部品を実装する。ボタン、インプット、チェックボックス、ラジオ、セレクト、日付ピッカー、ファイルアップロード、モーダル、タブ、アコーディオン、通知バナー、パンくず、ページネーション、ステップナビゲーション、テーブルなど約50部品のソース、依存関係、導入手順、トークン規則を持つ。「DADSのReactコンポーネント」「デジタル庁デザインシステムで画面を作りたい」「行政・学校・公共サービス向けのアクセシブルなフォームをReactで」「tailwind-theme-pluginの使い方」「DADS準拠のUIをNext.js/Viteで」など、DADSとReact/Tailwind/JSXが同時に関わる依頼では、コンポーネント名が出ていなくても必ずこのスキルを使う。DADSの考え方やガイドラインだけを聞かれた場合は、DADSドキュメント系のスキルを優先する。
+description: デジタル庁デザインシステム（DADS）の公式コードスニペット（React版 / design-system-example-components-react、React + Tailwind CSS + TypeScript）を同梱し、それを使ってReactの画面・フォーム・部品を実装する。ボタン、インプット、チェックボックス、ラジオ、セレクト、日付ピッカー、ファイルアップロード、モーダル、タブ、アコーディオン、通知バナー、パンくず、ページネーション、ステップナビゲーション、テーブルなど45部品のソース、依存関係、導入手順、トークン規則を持つ。「DADSのReactコンポーネント」「デジタル庁デザインシステムで画面を作りたい」「行政・学校・公共サービス向けのアクセシブルなフォームをReactで」「tailwind-theme-pluginの使い方」「DADS準拠のUIをNext.js/Viteで」など、DADSとReact/Tailwind/JSXが同時に関わる依頼では、コンポーネント名が出ていなくても必ずこのスキルを使う。DADSの考え方やガイドラインだけを聞かれた場合は、DADSドキュメント系のスキルを優先する。
 ---
 
 # DADS React コンポーネント
 
 デジタル庁が公開している**コードスニペット（React版）**を使って、アクセシブルなReactのUIを作るためのスキル。
-ソース一式（v2.7.0、2026-09-09、MIT）を `assets/components/` に同梱している。出所は `assets/SOURCE.md` を参照。
+実装のソース（v2.7.0、2026-09-09、MIT）を、部品ごとに1つのMarkdownにまとめて `assets/components/` に同梱している。出所は `assets/SOURCE.md` を参照。
 
 コードスニペットはnpmパッケージではない。**必要な部品のソースをプロジェクトにコピーし、プロジェクト自身のコードとして使い、必要に応じて書き換える**、というのが公式の想定である。この前提を外すと（たとえば、存在しないnpmパッケージから `import` するコードを書くと）動かないコードになる。
 
@@ -17,8 +17,8 @@ description: デジタル庁デザインシステム（DADS）の公式コード
 | `references/catalog.md` | 全コンポーネントの一覧（用途、DADS名、export、依存、必要なnpmパッケージ）と、React版がまだない部品 | 部品を選ぶとき。最初に読む |
 | `references/setup.md` | 既存プロジェクトへの導入手順（Tailwindプラグイン、グローバルCSS、フォント、React 19、Tailwind v4、Next.js、キーカラーの変更） | プロジェクトにまだDADSが入っていないとき |
 | `references/styling-rules.md` | トークン（色・文字・角丸・ブレークポイント）、フォーカス・無効・強制カラーの扱い、フォームの組み立て方、改造の考え方 | 部品を改造するとき、周りのレイアウトや部品を自作するとき |
-| `assets/components/<Name>/` | 各部品の `.tsx` / `.ts` / `.css`、使い方の例 `*.stories.tsx`、設計メモ `component-spec.md`（一部の部品のみ） | 使う部品のpropsや組み立て方を確かめるとき |
-| `scripts/add_components.py` | 部品を依存関係ごとプロジェクトにコピーし、必要なnpmパッケージを表示する | ファイルシステムのあるプロジェクトで作業するとき |
+| `assets/components/<Name>.md` | 各部品の `.tsx` / `.ts` / `.css` を、元のファイル名つきでまとめたもの（`deprecated/X` は `deprecated-X.md`） | 使う部品のpropsや組み立て方を確かめるとき |
+| `scripts/add_components.py` | 部品を依存関係ごと、元のファイル構成に展開してプロジェクトに書き出し、必要なnpmパッケージを表示する | ファイルシステムのあるプロジェクトで作業するとき |
 | `assets/LICENSE` | MITライセンス本文 | 配布・公開の相談があったとき |
 
 ## 進め方
@@ -40,14 +40,14 @@ description: デジタル庁デザインシステム（DADS）の公式コード
 
 - 画面の目的に合う部品を選ぶ。たとえば、オン／オフを即座に反映するなら `Switch`、送信時にまとめて確定するなら `Checkbox`。
 - 迷う場合や、使い方の規範（いつ使う／使わないか）が大事な場面では、DADSのガイドラインを確認する。DADSドキュメント系のスキルがあればそれを使い、なければ `https://design.digital.go.jp/dads/components/<slug>/` を参照する（slugは一覧の「DADS名 / slug」列）。
-- `Card`、`Table`、`Drawer`、`Calendar` は、共通部品ではなく**作例集**（stories）として提供されている。作例から必要なマークアップを取り出して、プロジェクト用の部品にする。
+- `Card`、`Table`、`Drawer`、`Calendar` は、公式でも共通部品がなく**作例**（Storybook）だけが提供されているため、同梱していない。ネットワークが使えれば Storybook（https://design.digital.go.jp/dads/react/）の作例を参考にし、使えなければ一覧の「依存」欄の部品と `references/styling-rules.md` のトークンで組み立てる。
 - React版がまだない部品（メガメニュー、モバイルメニュー、目次など）は、そのことをユーザーに伝える。そのうえで、`references/styling-rules.md` に沿って自作する。
 
 ### 3. ソースを読んでから使う
 
-使う部品ごとに `assets/components/<Name>/<Name>.tsx` と `<Name>.stories.tsx` を読む。
+使う部品ごとに `assets/components/<Name>.md` を読む。
 
-props の名前や値は、推測すると外れやすい。たとえば、Input の高さは `size` ではなく `blockSize`、Button の種類は `variant='solid-fill' | 'outline' | 'text'`、Switch は `SwitchOnOff` と `SwitchMode` の2つに分かれている。stories には、ラベル・補足テキスト・エラーの組み合わせ方や、`id` と `aria-describedby` による関連づけの実例があるので、組み立て方はそれに倣う。
+props の名前や値は、推測すると外れやすい。たとえば、Input の高さは `size` ではなく `blockSize`、Button の種類は `variant='solid-fill' | 'outline' | 'text'`、Switch は `SwitchOnOff` と `SwitchMode` の2つに分かれている。フォームの組み立て方（ラベル・補足テキスト・エラーと、`id` / `aria-describedby` による関連づけ）は `references/styling-rules.md` の例に倣う。ほかの使い方の例が必要で、ネットワークが使えれば Storybook を見る。
 
 ### 4. プロジェクトにコピーする
 
@@ -55,10 +55,10 @@ props の名前や値は、推測すると外れやすい。たとえば、Input
 python <このスキルのパス>/scripts/add_components.py Button Input Label ErrorText --dest src/components/dads
 ```
 
-- 依存する部品（`Slot`、`Button`、`Disclosure` など）も一緒にコピーされる。既存のファイルは上書きしない（上書きするには `--force`）。
+- `.md` にまとめたソースを、元のファイル構成（`Button/Button.tsx`、`Button/index.ts` など）に展開して書き出す。依存する部品（`Slot`、`Button`、`Disclosure` など）も一緒に書き出される。既存のファイルは上書きしない（上書きするには `--force`）。
 - コピーした部品同士は `../Slot` のような相対パスで参照し合うため、同じフォルダの下に並べたままにする。
 - 表示された npm パッケージが未導入なら、インストールする。初回は `references/setup.md` の手順で Tailwind も設定する。
-- Python が使えない環境では、`assets/components/<Name>/` から `.tsx`・`.ts`・`.css` を手でコピーする。`*.stories.tsx` と `component-spec.md` はコピーしない（Storybook の依存が入ってしまうため）。
+- Python が使えない環境では、`assets/components/<Name>.md` の各ブロック（`<!-- file: パス -->` の直後のコード）を、そのパスのファイルとして手で作る。
 
 ### 5. 画面を組み立てる
 

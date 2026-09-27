@@ -12,10 +12,10 @@ Claudeで使うデザイン関連のスキル集。
 
 [デジタル庁デザインシステム コードスニペット（React版）](https://github.com/digital-go-jp/design-system-example-components-react)（v2.7.0、2026-09-09）を、Claudeのスキルとしてまとめたもの。
 
-- 49部品のソース（`.tsx` / `.ts` / `.css`）と使い方の例（`*.stories.tsx`）
+- 45部品のソース（`.tsx` / `.ts` / `.css`）。アップロードできる容量に収めるため、部品ごとに1つのMarkdownにまとめ、Storybookのストーリーや画像は含めていない
 - 部品の一覧（用途、DADS公式ページとの対応、依存関係、必要なnpmパッケージ）
 - 導入手順、デザイントークンとアクセシビリティの規則
-- 部品を依存関係ごとプロジェクトにコピーするスクリプト（`scripts/add_components.py`）
+- 部品を依存関係ごと、元のファイル構成に展開してプロジェクトに書き出すスクリプト（`scripts/add_components.py`）
 
 ### 使い方
 

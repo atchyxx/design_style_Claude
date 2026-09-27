@@ -2,6 +2,8 @@
 
 同梱版: v2.7.0（2026-09-09）。「依存」はコピー時に一緒に必要な同梱コンポーネント、「外部」はnpmパッケージ。
 DADSページは DADS公式サイト `https://design.digital.go.jp/dads/components/<slug>/` に対応。
+ソースは `assets/components/<フォルダ名>.md`（`deprecated/X` は `deprecated-X.md`）。
+「作例のみ」の4つ（Calendar・Card・Drawer・Table）は共通部品がなく、同梱していない。Storybook（https://design.digital.go.jp/dads/react/）の作例を参照するか、依存欄の部品とトークンで組み立てる。
 
 | コンポーネント（フォルダ） | DADS名 / slug | 用途 | 主なexport | 依存 | 外部 |
 |---|---|---|---|---|---|
@@ -9,8 +11,8 @@ DADSページは DADS公式サイト `https://design.digital.go.jp/dads/componen
 | `Blockquote` | 引用ブロック / `blockquote` | 他の文献・発言の引用 | Blockquote | — | — |
 | `Breadcrumbs` | パンくずナビゲーション / `breadcrumb` | サイト階層内の現在位置を示す | BreadcrumbItem, BreadcrumbLink, BreadcrumbList, Breadcrumbs, BreadcrumbsLabel | Slot | — |
 | `Button` | ボタン / `button` | 操作の実行・遷移のトリガー。solid-fill / outline / text の3種と大きさ | Button, ButtonSize, ButtonVariant | Slot | — |
-| `Calendar` | — | カレンダー表示の作例（react-aria-components使用） | （作例のみ：stories を参照） | Button, Link, Select | @internationalized/date, react-aria-components |
-| `Card` | カード / `card` | カード型レイアウトの作例6種（共通コンポーネントはない） | （作例のみ：stories を参照） | Button, Checkbox, Link | — |
+| `Calendar` | — | カレンダー表示の作例（react-aria-components使用） | （作例のみ・同梱なし：Storybook参照） | Button, Link, Select | @internationalized/date, react-aria-components |
+| `Card` | カード / `card` | カード型レイアウトの作例6種（共通コンポーネントはない） | （作例のみ・同梱なし：Storybook参照） | Button, Checkbox, Link | — |
 | `Carousel` | カルーセル / `carousel` | 複数のスライドを切り替えて見せる | Carousel, CarouselSingle, CarouselSingleImage, CarouselSingleLink, CarouselSlide | Disclosure | — |
 | `Checkbox` | チェックボックス / `checkbox` | 複数選択・同意のチェック。エラー状態あり | Checkbox, CheckboxSize | — | — |
 | `ChipLabel` | チップラベル / `chip-label` | 状態やカテゴリを示す小さなラベル（操作しない） | ChipLabel, ChipLabelColor, ChipLabelVariant | — | — |
@@ -18,7 +20,7 @@ DADSページは DADS公式サイト `https://design.digital.go.jp/dads/componen
 | `Disclosure` | ディスクロージャー / `disclosure` | 補足情報の開閉（アコーディオンより軽い） | Disclosure, DisclosureBackLink, DisclosureSummary | — | — |
 | `Divider` | ディバイダー / `divider` | 区切り線 | Divider, DividerColor | — | — |
 | `Dl` | 説明リスト / `description-list` | 用語と説明の対（説明リスト） | Dd, Dl, Dt | — | — |
-| `Drawer` | ドロワー / `drawer` | 画面端からスライドするメニューの作例 | （作例のみ：stories を参照） | Divider, HamburgerMenuButton, Link | — |
+| `Drawer` | ドロワー / `drawer` | 画面端からスライドするメニューの作例 | （作例のみ・同梱なし：Storybook参照） | Divider, HamburgerMenuButton, Link | — |
 | `EmergencyBanner` | 緊急時バナー / `emergency-banner` | 災害など緊急時のお知らせ（最上位の警告） | EmergencyBanner, EmergencyBannerBody, EmergencyBannerButton, EmergencyBannerHeading, EmergencyBannerHeadingLevel | — | — |
 | `ErrorText` | — | フォーム項目のエラーメッセージ | ErrorText | — | — |
 | `FileUpload` | ファイルアップロード／ドロップエリア / `file-upload` | ファイル選択・ドラッグ＆ドロップ・一覧表示 | FileInfo, FileUpload, FileUploadDropArea, FileUploadFileInfo, FileUploadFileItem, FileUploadFileList | — | — |
@@ -50,7 +52,7 @@ DADSページは DADS公式サイト `https://design.digital.go.jp/dads/componen
 | `SupportText` | — | フォーム項目の補足説明文 | SupportText | — | — |
 | `Switch` | スイッチ / `switch` | オン／オフの即時切り替え | SwitchMode, SwitchOnOff | — | — |
 | `Tab` | タブ / `tab` | 同一画面内で表示内容を切り替えるタブ | Tab, TabChangeDetail, TabItem, TabList, TabPanel, TabPosition | — | — |
-| `Table` | テーブル／データテーブル / `table` | 表・データテーブルの作例（並べ替え・選択など） | （作例のみ：stories を参照） | Checkbox, Link, List | — |
+| `Table` | テーブル／データテーブル / `table` | 表・データテーブルの作例（並べ替え・選択など） | （作例のみ・同梱なし：Storybook参照） | Checkbox, Link, List | — |
 | `Textarea` | テキストエリア / `textarea` | 複数行テキスト入力。文字数カウントあり | Textarea | — | — |
 | `UtilityLink` | ユーティリティリンク / `utility-link` | フッター等の補助的なリンク | UtilityLink, UtilityLinkExternalLinkIcon | Slot | — |
 | `deprecated/ScrollToTopButton` | スクロールトップボタン / `scroll-top-button` | ページ上部へ戻るボタン（非推奨） | ScrollToTopButton | — | — |

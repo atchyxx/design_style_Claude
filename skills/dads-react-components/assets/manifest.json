@@ -5,8 +5,6 @@
     "dads_slug": "accordion",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Accordion",
       "AccordionBackLink",
@@ -21,8 +19,6 @@
     "dads_slug": "blockquote",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Blockquote"
     ],
@@ -36,8 +32,6 @@
       "Slot"
     ],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "BreadcrumbItem",
       "BreadcrumbLink",
@@ -55,8 +49,6 @@
       "Slot"
     ],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Button",
       "ButtonSize",
@@ -77,10 +69,8 @@
       "@internationalized/date",
       "react-aria-components"
     ],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
-      "（作例のみ：stories を参照）"
+      "（作例のみ・同梱なし：Storybook参照）"
     ],
     "story_only": true
   },
@@ -94,10 +84,8 @@
       "Link"
     ],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
-      "（作例のみ：stories を参照）"
+      "（作例のみ・同梱なし：Storybook参照）"
     ],
     "story_only": true
   },
@@ -109,8 +97,6 @@
       "Disclosure"
     ],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Carousel",
       "CarouselSingle",
@@ -126,8 +112,6 @@
     "dads_slug": "checkbox",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Checkbox",
       "CheckboxSize"
@@ -140,8 +124,6 @@
     "dads_slug": "chip-label",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "ChipLabel",
       "ChipLabelColor",
@@ -155,8 +137,6 @@
     "dads_slug": "date-picker",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "DatePicker",
       "DatePickerCalendarButton",
@@ -173,8 +153,6 @@
     "dads_slug": "disclosure",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Disclosure",
       "DisclosureBackLink",
@@ -188,8 +166,6 @@
     "dads_slug": "divider",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Divider",
       "DividerColor"
@@ -202,8 +178,6 @@
     "dads_slug": "description-list",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Dd",
       "Dl",
@@ -221,10 +195,8 @@
       "Link"
     ],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
-      "（作例のみ：stories を参照）"
+      "（作例のみ・同梱なし：Storybook参照）"
     ],
     "story_only": true
   },
@@ -234,8 +206,6 @@
     "dads_slug": "emergency-banner",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "EmergencyBanner",
       "EmergencyBannerBody",
@@ -251,8 +221,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "ErrorText"
     ],
@@ -264,8 +232,6 @@
     "dads_slug": "file-upload",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "FileInfo",
       "FileUpload",
@@ -292,8 +258,6 @@
     "dads_slug": "hamburger-menu-button",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "CloseIcon",
       "CloseWithLabelIcon",
@@ -310,8 +274,6 @@
     "dads_slug": "heading",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Heading",
       "HeadingLevel",
@@ -328,8 +290,6 @@
     "dads_slug": "horizontal-menu",
     "deps": [],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "HorizontalMenu",
       "HorizontalMenuItem",
@@ -344,8 +304,6 @@
     "dads_slug": "image",
     "deps": [],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "Image",
       "ImageArea",
@@ -361,8 +319,6 @@
     "dads_slug": "input-text",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Input",
       "InputBlockSize"
@@ -375,8 +331,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Label",
       "LabelSize"
@@ -389,8 +343,6 @@
     "dads_slug": "language-selector",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "LanguageSelector",
       "LanguageSelectorArrowIcon",
@@ -408,8 +360,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Legend",
       "LegendSize"
@@ -424,8 +374,6 @@
       "Slot"
     ],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Link",
       "LinkExternalLinkIcon"
@@ -438,8 +386,6 @@
     "dads_slug": "list",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "List"
     ],
@@ -451,8 +397,6 @@
     "dads_slug": "menu-list",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "MenuList",
       "MenuListItem",
@@ -469,8 +413,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "MenuItemSelectDetail",
       "MenuListBox",
@@ -490,8 +432,6 @@
     "dads_slug": "modal-dialog",
     "deps": [],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "ModalDialog",
       "ModalDialogActions",
@@ -513,8 +453,6 @@
     "dads_slug": "notification-banner",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "NotificationBanner",
       "NotificationBannerBody",
@@ -536,8 +474,6 @@
       "Slot"
     ],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "PageNavigation",
       "PageNavigationArrowButton",
@@ -554,8 +490,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "ProgressIndicator",
       "ProgressIndicatorAnnouncerMessages",
@@ -573,8 +507,6 @@
     "dads_slug": "radio",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Radio",
       "RadioSize"
@@ -587,8 +519,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "RequirementBadge"
     ],
@@ -602,8 +532,6 @@
       "Slot"
     ],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "ResourceList",
       "ResourceListAction",
@@ -628,8 +556,6 @@
       "Button"
     ],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "SearchBox",
       "SearchBoxDetail",
@@ -648,8 +574,6 @@
     "dads_slug": "select",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Select",
       "SelectBlockSize"
@@ -662,8 +586,6 @@
     "dads_slug": "date-picker",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "SeparatedDatePicker",
       "SeparatedDatePickerCalendarButton",
@@ -680,8 +602,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": false,
     "exports": [
       "Slot"
     ],
@@ -693,8 +613,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "StatusBadge"
     ],
@@ -708,8 +626,6 @@
       "Slot"
     ],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "StepNavigation",
       "StepNavigationDescription",
@@ -729,8 +645,6 @@
     "dads_slug": "",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "SupportText"
     ],
@@ -742,8 +656,6 @@
     "dads_slug": "switch",
     "deps": [],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "SwitchMode",
       "SwitchOnOff"
@@ -756,8 +668,6 @@
     "dads_slug": "tab",
     "deps": [],
     "external": [],
-    "has_spec": true,
-    "has_stories": true,
     "exports": [
       "Tab",
       "TabChangeDetail",
@@ -778,10 +688,8 @@
       "List"
     ],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
-      "（作例のみ：stories を参照）"
+      "（作例のみ・同梱なし：Storybook参照）"
     ],
     "story_only": true
   },
@@ -791,8 +699,6 @@
     "dads_slug": "textarea",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "Textarea"
     ],
@@ -806,8 +712,6 @@
       "Slot"
     ],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "UtilityLink",
       "UtilityLinkExternalLinkIcon"
@@ -820,8 +724,6 @@
     "dads_slug": "scroll-top-button",
     "deps": [],
     "external": [],
-    "has_spec": false,
-    "has_stories": true,
     "exports": [
       "ScrollToTopButton"
     ],

@@ -5,7 +5,9 @@ Usage:
   python tools/build_skill.py /tmp/dads-react
 
 Regenerates assets/components, assets/manifest.json, assets/SOURCE.md, assets/LICENSE and
-references/catalog.md. SKILL.md and the other references are maintained by hand.
+references/catalog.md. Each component's implementation files (.tsx/.ts/.css) are bundled into one
+Markdown file (assets/components/<Name>.md) to keep the skill small enough to upload; stories,
+tests, specs and images are left out. scripts/add_components.py unpacks them again. SKILL.md and the other references are maintained by hand.
 Add a Japanese purpose to tools/purposes.json for any new component the script reports.
 """
 import json
@@ -20,7 +22,8 @@ if len(sys.argv) != 2:
     sys.exit(__doc__)
 SRC = Path(sys.argv[1]).resolve()
 OUT = HERE.parent / "skills/dads-react-components"
-KEEP_EXT = {".tsx", ".ts", ".css", ".md"}
+KEEP_EXT = {".tsx", ".ts", ".css"}
+FENCE = "````"
 
 comp_root = SRC / "src/components"
 dest_root = OUT / "assets/components"
@@ -38,18 +41,23 @@ comp_dirs = sorted(
 rows = []
 for d in comp_dirs:
     rel = d.relative_to(comp_root)
-    files = [
+    files = sorted(
         f for f in d.rglob("*")
-        if f.is_file() and f.suffix in KEEP_EXT and not f.name.endswith(".test.tsx") and not f.name.endswith(".test.ts")
-    ]
-    for f in files:
-        target = dest_root / f.relative_to(comp_root)
-        target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(f, target)
-
-    impl = [f for f in files if f.suffix in (".tsx", ".ts") and not f.name.endswith(".stories.tsx")]
-    code = "\n".join(f.read_text() for f in impl)
+        if f.is_file() and f.suffix in KEEP_EXT and not re.search(r"\.(test|stories)\.tsx?$", f.name)
+    )
+    code = "\n".join(f.read_text() for f in files if f.suffix in (".tsx", ".ts"))
     story_only = not re.search(r"export (?:const|function) [A-Z]", code)
+    if not story_only:
+        parts = [f"# {rel.name}\n\n元のフォルダ: `src/components/{rel}/`。`scripts/add_components.py` で個別のファイルに展開できる。\n"]
+        for f in files:
+            text = f.read_text()
+            assert FENCE not in text and text.endswith("\n"), f
+            lang = f.suffix.lstrip(".")
+            parts.append(f"<!-- file: {f.relative_to(d)} -->\n{FENCE}{lang}\n{text}{FENCE}\n")
+        dest_root.mkdir(parents=True, exist_ok=True)
+        (dest_root / f"{str(rel).replace('/', '-')}.md").write_text("\n".join(parts))
+    else:
+        files = [f for f in d.rglob("*.stories.tsx")]
     if story_only:
         code = "\n".join(f.read_text() for f in files if f.name.endswith(".stories.tsx"))
         code = re.sub(r"from '(@storybook|storybook)[^']*'", "", code)
@@ -58,7 +66,7 @@ for d in comp_dirs:
     exports = sorted(set(re.findall(r"export (?:const|function|type) ([A-Za-z]+)", code)))
     exports = [e for e in exports if not e.endswith("Props") and e[0].isupper()] or exports
     if story_only:
-        exports = ["（作例のみ：stories を参照）"]
+        exports = ["（作例のみ・同梱なし：Storybook参照）"]
     slug, title = dads_map.get(str(rel), ("", ""))
     rows.append({
         "dir": str(rel),
@@ -66,8 +74,6 @@ for d in comp_dirs:
         "dads_slug": slug,
         "deps": deps,
         "external": ext,
-        "has_spec": (d / "component-spec.md").exists(),
-        "has_stories": any(f.name.endswith(".stories.tsx") for f in files),
         "exports": exports,
         "story_only": story_only,
     })
@@ -83,8 +89,9 @@ version = json.loads((SRC / "package.json").read_text())["version"]
     f"# 同梱ソースの出所\n\n"
     f"- リポジトリ: https://github.com/digital-go-jp/design-system-example-components-react\n"
     f"- バージョン: {version}\n- コミット: {commit}（{date}）\n- ライセンス: MIT（`LICENSE` 参照）\n\n"
-    f"同梱しているのは `src/components/` 配下の実装（.tsx/.ts/.css）、Storybookのストーリー（`*.stories.tsx`、使い方の例として）、"
-    f"`component-spec.md` です。画像・テスト・MDXは含めていません。\n"
+    f"同梱しているのは `src/components/` 配下の実装（.tsx/.ts/.css）だけで、部品ごとに1つのMarkdown"
+    f"（`components/<Name>.md`）にまとめています。Storybookのストーリー、テスト、設計メモ、画像、MDXは、"
+    f"容量を抑えるため含めていません。使い方の例は Storybook（https://design.digital.go.jp/dads/react/）を参照してください。\n"
 )
 
 # Catalog table (Japanese purpose column is maintained by hand in PURPOSES below)
@@ -94,6 +101,8 @@ lines = [
     "",
     f"同梱版: v{version}（{date}）。「依存」はコピー時に一緒に必要な同梱コンポーネント、「外部」はnpmパッケージ。",
     "DADSページは DADS公式サイト `https://design.digital.go.jp/dads/components/<slug>/` に対応。",
+    "ソースは `assets/components/<フォルダ名>.md`（`deprecated/X` は `deprecated-X.md`）。",
+    "「作例のみ」の4つ（Calendar・Card・Drawer・Table）は共通部品がなく、同梱していない。Storybook（https://design.digital.go.jp/dads/react/）の作例を参照するか、依存欄の部品とトークンで組み立てる。",
     "",
     "| コンポーネント（フォルダ） | DADS名 / slug | 用途 | 主なexport | 依存 | 外部 |",
     "|---|---|---|---|---|---|",
