@@ -1,0 +1,830 @@
+[
+  {
+    "dir": "Accordion",
+    "title": "アコーディオン",
+    "dads_slug": "accordion",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Accordion",
+      "AccordionBackLink",
+      "AccordionContent",
+      "AccordionSummary"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Blockquote",
+    "title": "引用ブロック",
+    "dads_slug": "blockquote",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Blockquote"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Breadcrumbs",
+    "title": "パンくずナビゲーション",
+    "dads_slug": "breadcrumb",
+    "deps": [
+      "Slot"
+    ],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "BreadcrumbItem",
+      "BreadcrumbLink",
+      "BreadcrumbList",
+      "Breadcrumbs",
+      "BreadcrumbsLabel"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Button",
+    "title": "ボタン",
+    "dads_slug": "button",
+    "deps": [
+      "Slot"
+    ],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Button",
+      "ButtonSize",
+      "ButtonVariant"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Calendar",
+    "title": "",
+    "dads_slug": "",
+    "deps": [
+      "Button",
+      "Link",
+      "Select"
+    ],
+    "external": [
+      "@internationalized/date",
+      "react-aria-components"
+    ],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "（作例のみ：stories を参照）"
+    ],
+    "story_only": true
+  },
+  {
+    "dir": "Card",
+    "title": "カード",
+    "dads_slug": "card",
+    "deps": [
+      "Button",
+      "Checkbox",
+      "Link"
+    ],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "（作例のみ：stories を参照）"
+    ],
+    "story_only": true
+  },
+  {
+    "dir": "Carousel",
+    "title": "カルーセル",
+    "dads_slug": "carousel",
+    "deps": [
+      "Disclosure"
+    ],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Carousel",
+      "CarouselSingle",
+      "CarouselSingleImage",
+      "CarouselSingleLink",
+      "CarouselSlide"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Checkbox",
+    "title": "チェックボックス",
+    "dads_slug": "checkbox",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Checkbox",
+      "CheckboxSize"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "ChipLabel",
+    "title": "チップラベル",
+    "dads_slug": "chip-label",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "ChipLabel",
+      "ChipLabelColor",
+      "ChipLabelVariant"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "DatePicker",
+    "title": "日付ピッカー／カレンダー",
+    "dads_slug": "date-picker",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "DatePicker",
+      "DatePickerCalendarButton",
+      "DatePickerDate",
+      "DatePickerMonth",
+      "DatePickerSize",
+      "DatePickerYear"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Disclosure",
+    "title": "ディスクロージャー",
+    "dads_slug": "disclosure",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Disclosure",
+      "DisclosureBackLink",
+      "DisclosureSummary"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Divider",
+    "title": "ディバイダー",
+    "dads_slug": "divider",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Divider",
+      "DividerColor"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Dl",
+    "title": "説明リスト",
+    "dads_slug": "description-list",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Dd",
+      "Dl",
+      "Dt"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Drawer",
+    "title": "ドロワー",
+    "dads_slug": "drawer",
+    "deps": [
+      "Divider",
+      "HamburgerMenuButton",
+      "Link"
+    ],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "（作例のみ：stories を参照）"
+    ],
+    "story_only": true
+  },
+  {
+    "dir": "EmergencyBanner",
+    "title": "緊急時バナー",
+    "dads_slug": "emergency-banner",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "EmergencyBanner",
+      "EmergencyBannerBody",
+      "EmergencyBannerButton",
+      "EmergencyBannerHeading",
+      "EmergencyBannerHeadingLevel"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "ErrorText",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "ErrorText"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "FileUpload",
+    "title": "ファイルアップロード／ドロップエリア",
+    "dads_slug": "file-upload",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "FileInfo",
+      "FileUpload",
+      "FileUploadDropArea",
+      "FileUploadFileInfo",
+      "FileUploadFileItem",
+      "FileUploadFileList",
+      "FileUploadFileMarker",
+      "FileUploadFileMeta",
+      "FileUploadFileName",
+      "FileUploadInput",
+      "FileUploadMessages",
+      "FileUploadViewportOverlay",
+      "FileUploadViewportOverlayMessage",
+      "UseFileDropOptions",
+      "UseFileStateOptions",
+      "UseFileUploadOptions"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "HamburgerMenuButton",
+    "title": "ハンバーガーメニューボタン",
+    "dads_slug": "hamburger-menu-button",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "CloseIcon",
+      "CloseWithLabelIcon",
+      "HamburgerIcon",
+      "HamburgerMenuButton",
+      "HamburgerMenuIconButton",
+      "HamburgerWithLabelIcon"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Heading",
+    "title": "見出し",
+    "dads_slug": "heading",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Heading",
+      "HeadingLevel",
+      "HeadingShoulder",
+      "HeadingSize",
+      "HeadingTitle",
+      "RuleSize"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "HorizontalMenu",
+    "title": "水平メニュー",
+    "dads_slug": "horizontal-menu",
+    "deps": [],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "HorizontalMenu",
+      "HorizontalMenuItem",
+      "HorizontalMenuItemButton",
+      "HorizontalMenuItemLink"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Image",
+    "title": "画像",
+    "dads_slug": "image",
+    "deps": [],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "Image",
+      "ImageArea",
+      "ImageAreaLink",
+      "ImageCaption",
+      "ImageCaptionStyle"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Input",
+    "title": "インプットテキスト",
+    "dads_slug": "input-text",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Input",
+      "InputBlockSize"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Label",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Label",
+      "LabelSize"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "LanguageSelector",
+    "title": "ランゲージセレクター",
+    "dads_slug": "language-selector",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "LanguageSelector",
+      "LanguageSelectorArrowIcon",
+      "LanguageSelectorButton",
+      "LanguageSelectorGlobeIcon",
+      "LanguageSelectorGlobeWithLabelIcon",
+      "LanguageSelectorMenu",
+      "LanguageSelectorMenuItem"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Legend",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Legend",
+      "LegendSize"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Link",
+    "title": "",
+    "dads_slug": "",
+    "deps": [
+      "Slot"
+    ],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Link",
+      "LinkExternalLinkIcon"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "List",
+    "title": "箇条書きリスト",
+    "dads_slug": "list",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "List"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "MenuList",
+    "title": "メニューリスト",
+    "dads_slug": "menu-list",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "MenuList",
+      "MenuListItem",
+      "MenuListItemButton",
+      "MenuListItemLink",
+      "MenuListSize",
+      "MenuListType"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "MenuListBox",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "MenuItemSelectDetail",
+      "MenuListBox",
+      "MenuListBoxOpener",
+      "MenuListBoxOpenerFontWeight",
+      "MenuListBoxOpenerSize",
+      "MenuListBoxOpenerStyle",
+      "MenuListBoxPopup",
+      "UseMenuListBoxOptions",
+      "UseMenuListBoxReturn"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "ModalDialog",
+    "title": "モーダルダイアログ",
+    "dads_slug": "modal-dialog",
+    "deps": [],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "ModalDialog",
+      "ModalDialogActions",
+      "ModalDialogBody",
+      "ModalDialogClose",
+      "ModalDialogContent",
+      "ModalDialogHeader",
+      "ModalDialogHeading",
+      "ModalDialogRequestCloseEvent",
+      "ModalDialogScrollArea",
+      "UseModalDialogOptions",
+      "UseModalDialogResult"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "NotificationBanner",
+    "title": "ノティフィケーションバナー",
+    "dads_slug": "notification-banner",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "NotificationBanner",
+      "NotificationBannerBody",
+      "NotificationBannerClose",
+      "NotificationBannerHeadingLevel",
+      "NotificationBannerIcon",
+      "NotificationBannerMobileClose",
+      "NotificationBannerStyle",
+      "NotificationBannerType"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "PageNavigation",
+    "title": "ページナビゲーション",
+    "dads_slug": "page-navigation",
+    "deps": [
+      "Button",
+      "Slot"
+    ],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "PageNavigation",
+      "PageNavigationArrowButton",
+      "PageNavigationArrowButtonSize",
+      "PageNavigationButton",
+      "PageNavigationControl",
+      "PageNavigationCounter"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "ProgressIndicator",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "ProgressIndicator",
+      "ProgressIndicatorAnnouncerMessages",
+      "ProgressIndicatorLinear",
+      "ProgressIndicatorSize",
+      "ProgressIndicatorSpinner",
+      "ProgressIndicatorStatic",
+      "ProgressIndicatorType"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Radio",
+    "title": "ラジオボタン",
+    "dads_slug": "radio",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Radio",
+      "RadioSize"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "RequirementBadge",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "RequirementBadge"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "ResourceList",
+    "title": "リソースリスト",
+    "dads_slug": "resource-list",
+    "deps": [
+      "Slot"
+    ],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "ResourceList",
+      "ResourceListAction",
+      "ResourceListActionButton",
+      "ResourceListBody",
+      "ResourceListContents",
+      "ResourceListControl",
+      "ResourceListLabel",
+      "ResourceListSub",
+      "ResourceListSupport",
+      "ResourceListTitle",
+      "ResourceListTitleAs",
+      "ResourceListVariant"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "SearchBox",
+    "title": "検索ボックス",
+    "dads_slug": "search-box",
+    "deps": [
+      "Button"
+    ],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "SearchBox",
+      "SearchBoxDetail",
+      "SearchBoxDetailActions",
+      "SearchBoxFields",
+      "SearchBoxInput",
+      "SearchBoxSelect",
+      "SearchBoxSize",
+      "SearchBoxSubmit"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Select",
+    "title": "セレクトボックス",
+    "dads_slug": "select",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Select",
+      "SelectBlockSize"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "SeparatedDatePicker",
+    "title": "日付ピッカー／カレンダー",
+    "dads_slug": "date-picker",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "SeparatedDatePicker",
+      "SeparatedDatePickerCalendarButton",
+      "SeparatedDatePickerDate",
+      "SeparatedDatePickerMonth",
+      "SeparatedDatePickerSize",
+      "SeparatedDatePickerYear"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Slot",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": false,
+    "exports": [
+      "Slot"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "StatusBadge",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "StatusBadge"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "StepNavigation",
+    "title": "ステップナビゲーション",
+    "dads_slug": "step-navigation",
+    "deps": [
+      "Slot"
+    ],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "StepNavigation",
+      "StepNavigationDescription",
+      "StepNavigationList",
+      "StepNavigationNumber",
+      "StepNavigationStateIndicator",
+      "StepNavigationStep",
+      "StepNavigationStepHeader",
+      "StepNavigationStepState",
+      "StepNavigationTitle"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "SupportText",
+    "title": "",
+    "dads_slug": "",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "SupportText"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Switch",
+    "title": "スイッチ",
+    "dads_slug": "switch",
+    "deps": [],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "SwitchMode",
+      "SwitchOnOff"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Tab",
+    "title": "タブ",
+    "dads_slug": "tab",
+    "deps": [],
+    "external": [],
+    "has_spec": true,
+    "has_stories": true,
+    "exports": [
+      "Tab",
+      "TabChangeDetail",
+      "TabItem",
+      "TabList",
+      "TabPanel",
+      "TabPosition"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "Table",
+    "title": "テーブル／データテーブル",
+    "dads_slug": "table",
+    "deps": [
+      "Checkbox",
+      "Link",
+      "List"
+    ],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "（作例のみ：stories を参照）"
+    ],
+    "story_only": true
+  },
+  {
+    "dir": "Textarea",
+    "title": "テキストエリア",
+    "dads_slug": "textarea",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "Textarea"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "UtilityLink",
+    "title": "ユーティリティリンク",
+    "dads_slug": "utility-link",
+    "deps": [
+      "Slot"
+    ],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "UtilityLink",
+      "UtilityLinkExternalLinkIcon"
+    ],
+    "story_only": false
+  },
+  {
+    "dir": "deprecated/ScrollToTopButton",
+    "title": "スクロールトップボタン",
+    "dads_slug": "scroll-top-button",
+    "deps": [],
+    "external": [],
+    "has_spec": false,
+    "has_stories": true,
+    "exports": [
+      "ScrollToTopButton"
+    ],
+    "story_only": false
+  }
+]

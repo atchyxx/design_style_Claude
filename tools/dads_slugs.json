@@ -1,0 +1,154 @@
+{
+  "Accordion": [
+    "accordion",
+    "アコーディオン"
+  ],
+  "Blockquote": [
+    "blockquote",
+    "引用ブロック"
+  ],
+  "Breadcrumbs": [
+    "breadcrumb",
+    "パンくずナビゲーション"
+  ],
+  "Button": [
+    "button",
+    "ボタン"
+  ],
+  "Card": [
+    "card",
+    "カード"
+  ],
+  "Carousel": [
+    "carousel",
+    "カルーセル"
+  ],
+  "Checkbox": [
+    "checkbox",
+    "チェックボックス"
+  ],
+  "ChipLabel": [
+    "chip-label",
+    "チップラベル"
+  ],
+  "DatePicker": [
+    "date-picker",
+    "日付ピッカー／カレンダー"
+  ],
+  "Disclosure": [
+    "disclosure",
+    "ディスクロージャー"
+  ],
+  "Divider": [
+    "divider",
+    "ディバイダー"
+  ],
+  "Dl": [
+    "description-list",
+    "説明リスト"
+  ],
+  "Drawer": [
+    "drawer",
+    "ドロワー"
+  ],
+  "EmergencyBanner": [
+    "emergency-banner",
+    "緊急時バナー"
+  ],
+  "FileUpload": [
+    "file-upload",
+    "ファイルアップロード／ドロップエリア"
+  ],
+  "HamburgerMenuButton": [
+    "hamburger-menu-button",
+    "ハンバーガーメニューボタン"
+  ],
+  "Heading": [
+    "heading",
+    "見出し"
+  ],
+  "HorizontalMenu": [
+    "horizontal-menu",
+    "水平メニュー"
+  ],
+  "Image": [
+    "image",
+    "画像"
+  ],
+  "Input": [
+    "input-text",
+    "インプットテキスト"
+  ],
+  "LanguageSelector": [
+    "language-selector",
+    "ランゲージセレクター"
+  ],
+  "List": [
+    "list",
+    "箇条書きリスト"
+  ],
+  "MenuList": [
+    "menu-list",
+    "メニューリスト"
+  ],
+  "ModalDialog": [
+    "modal-dialog",
+    "モーダルダイアログ"
+  ],
+  "NotificationBanner": [
+    "notification-banner",
+    "ノティフィケーションバナー"
+  ],
+  "PageNavigation": [
+    "page-navigation",
+    "ページナビゲーション"
+  ],
+  "Radio": [
+    "radio",
+    "ラジオボタン"
+  ],
+  "ResourceList": [
+    "resource-list",
+    "リソースリスト"
+  ],
+  "SearchBox": [
+    "search-box",
+    "検索ボックス"
+  ],
+  "Select": [
+    "select",
+    "セレクトボックス"
+  ],
+  "SeparatedDatePicker": [
+    "date-picker",
+    "日付ピッカー／カレンダー"
+  ],
+  "StepNavigation": [
+    "step-navigation",
+    "ステップナビゲーション"
+  ],
+  "Switch": [
+    "switch",
+    "スイッチ"
+  ],
+  "Tab": [
+    "tab",
+    "タブ"
+  ],
+  "Table": [
+    "table",
+    "テーブル／データテーブル"
+  ],
+  "Textarea": [
+    "textarea",
+    "テキストエリア"
+  ],
+  "UtilityLink": [
+    "utility-link",
+    "ユーティリティリンク"
+  ],
+  "deprecated/ScrollToTopButton": [
+    "scroll-top-button",
+    "スクロールトップボタン"
+  ]
+}
